@@ -130,3 +130,26 @@ function saveCliente(paramId){
     }
     
 }
+
+function mnuModal(){
+    $.post("modulos/modal/showModal.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}
+
+function llenarModal(parametro){
+    $.post("modulos/modal/jxModal.php", {valor: parametro})
+    .done(function(data)
+    {
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+            keyboard: false
+        });
+
+        $("#dvModalContainer").html("");
+        $("#dvModalContainer").html(data);
+        myModal.show();
+    });
+}

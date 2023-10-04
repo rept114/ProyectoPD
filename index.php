@@ -37,7 +37,10 @@
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Configuraciones</a></li>
                         </ul>
-                    </li>            
+                    </li>     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="mnuModal();">Modal</a>
+                    </li>       
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
