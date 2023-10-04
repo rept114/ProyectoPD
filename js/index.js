@@ -164,9 +164,10 @@ function mnuCards(){
 }
 
 function HacerBusqueda(){
-
+    $.post("modulos/cards/jxGetArticulos.php", {criterioBusqueda: varCriterioBusqueda})
+    .done(function(data)
     {
         $("#dvResultadoBuscar").html("");
         $("#dvResultadoBuscar").html(data);
-    };
+    });
 }
