@@ -162,3 +162,11 @@ function mnuCards(){
         $("#dvContainer").html(data);
     });
 }
+
+function HacerBusqueda(){
+
+    {
+        $("#dvResultadoBuscar").html("");
+        $("#dvResultadoBuscar").html(data);
+    };
+}
