@@ -153,3 +153,12 @@ function llenarModal(parametro){
         myModal.show();
     });
 }
+
+function mnuCards(){
+    $.post("modulos/cards/showCards.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}

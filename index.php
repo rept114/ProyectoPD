@@ -40,7 +40,10 @@
                     </li>     
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="mnuModal();">Modal</a>
-                    </li>       
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="mnuCards();">Cards</a>
+                    </li>          
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
