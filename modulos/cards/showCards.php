@@ -5,7 +5,7 @@
             <input type="text" name="txtBuscar" id="txtBuscar" class="form-control" placeholder="Capture descripción o código">
         </div>
         <div class="col-2">
-            <button class="btn btn-danger" onclick="HacerBusqueda();">Buscar</button>
+            <button class="btn btn-danger" onclick="hacerBusqueda();">Buscar</button>
         </div>
     </div>
     <div class="row" id="dvResultadoBuscar">

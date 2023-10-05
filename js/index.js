@@ -163,11 +163,12 @@ function mnuCards(){
     });
 }
 
-function HacerBusqueda(){
+function hacerBusqueda(){
+    varCriterioBusqueda = $("#txtBuscar").val();
     $.post("modulos/cards/jxGetArticulos.php", {criterioBusqueda: varCriterioBusqueda})
     .done(function(data)
     {
         $("#dvResultadoBuscar").html("");
         $("#dvResultadoBuscar").html(data);
-    });
+    })
 }

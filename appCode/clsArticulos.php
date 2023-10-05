@@ -33,6 +33,7 @@ class Articulos
         return $this->objMysql->ejecutaSPSafe('sp_getInfoArticulo_erik',array($codigo),$MQ);   
     }
     
+    //actualiza el articulo
     public function updateArticulo ($codigo, $descripcion, $precio, $categoria, $MQ=false){
         return $this->objMysql->ejecutaSPSafe('sp_update_articulo', array($codigo, $descripcion, $precio, $categoria), $MQ);
     }
