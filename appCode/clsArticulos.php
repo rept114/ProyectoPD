@@ -16,6 +16,11 @@ class Articulos
         //select all data       
         return $this->objMysql->ejecutaSPSafe('sp_getArticulos_erik',null,$MQ);   
     }
+
+    public function getBuscarArticulos($criterioBusqueda, $MQ=false){
+        //select all data       
+        return $this->objMysql->ejecutaSPSafe('sp_getBuscarArticulos_erik', array($criterioBusqueda),$MQ);   
+    }
     
     // Elimina el cliente que cumpla con el id recibido
     public function deleteArticulos($codigo, $MQ=false){
@@ -37,5 +42,6 @@ class Articulos
     public function updateArticulo ($codigo, $descripcion, $precio, $categoria, $MQ=false){
         return $this->objMysql->ejecutaSPSafe('sp_update_articulo', array($codigo, $descripcion, $precio, $categoria), $MQ);
     }
+
 }
 ?>
